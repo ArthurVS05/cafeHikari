@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--main-color);
+    font-family: var(--font-family);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: var(--heightNav);
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+nav>a {
+    font-size: 2rem;
+    color: var(--tertiary-color);
+}
+
+nav>a>img {
+    width: 40%;
+}
+
+#iconClose {
+    display: none;
+}
+
+#navLinks {
+    display: none;
+}
+
+nav>ul>li>a,
+nav>a {
+    text-decoration: none;
+}
+
+header>img {
+    width: 50%;
+    /* height: 50%; */
+}
+
+/*div qui contient l'image centrale de l'accueil*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: var(--minHeightCalc);
+}
+
+
+/*bandeau texte défilant */
+.boxDefilement {
+    overflow: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    width: 100%;
+    height: var(--heightWelcome);
+    background-color: var(--tertiary-color);
+}
+
+.boxDefilement>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    animation: Scroll 3s infinite linear;
+}
+
+@keyframes Scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.circleDefilement {
+    height: 10px;
+    width: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+.textDefile {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--main-color);
+}
+
+/* FIN bandeau texte défilant */
+
+h1 {
+    font-weight: "ExtraBold";
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.mainColor {
+    color: var(--main-color);
+}
+
+p,
+a,
+h1 {
+    color: var(--light);
+}
+
+.secondaryColor {
+    color: var(--secondary-color);
+}
+
+.btnSecondaryColor {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.backgroundLight {
+    background: var(--light);
+}
+
+/* hauteur des sections*/
+
+.firstSection,
+.secondSection,
+.thirdSection {
+    min-height: 100vh;
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-start; */
+    padding: 2rem;
+}
+
+.firstSection>img {
+    width: 100%;
+}
+
+.secondSection>img {
+    width: 100%;
+}
+
+.thirdSection>img {
+    margin: 2rem 0;
+}
+
+.btnEnSavoirPlus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockEnSavoirPlus {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttonsSlider {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+
+}
+
+.buttonsSlider>button {
+    margin: 1rem;
+}
+
+
+
+.firstSection>img {
+    margin: 2rem 0;
+}
+
+.secondSection>img {
+    margin: 2rem 0;
+}
+
+.fourthSection {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fourthSection>section {
+    padding: 2rem;
+}
+
+.fourthSection>section>svg {
+    font-size: 4rem;
+}
+
+.fourthSection>img {
+    width: 100%;
+}
+
+.button {
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 1rem auto;
+    width: 100%;
+}
+
+
+
+.buttonContactUs {
+    background-color: var(--light);
+    color: var(--main-color);
+}
+
+.buttonInstagram {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    /* display: flex;
+    flex-direction: column; */
+    min-height: 100vh;
+    padding: 2rem;
+
+}
+
+footer>section {
+    text-align: center;
+}
+
+footer>section>p {
+    margin: 1rem 0;
+}
+
+footer>div {
+    width: 50%;
+    margin: 6rem auto;
+}
