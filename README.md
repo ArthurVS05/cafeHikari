@@ -24,6 +24,6 @@ On veut :
 
 - un bandeau "Bienvenue" en pied de page (le rendre dynamique en JS)
 
-comment faire un one page ?
+
 
 # cafeHikari
