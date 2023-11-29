@@ -110,6 +110,7 @@ header {
     justify-content: center;
     align-items: center;
     min-height: var(--minHeightCalc);
+    width: 100%;
 }
 
 
@@ -211,11 +212,17 @@ h1 {
 }
 
 .firstSection>img {
+    margin: 2rem 0;
+}
+
+.firstSection>section>img {
     width: 100%;
 }
 
-.secondSection>img {
+#sliderA,
+#sliderB {
     width: 100%;
+    margin: 2rem 0;
 }
 
 .thirdSection>img {
@@ -246,14 +253,6 @@ h1 {
 }
 
 
-
-.firstSection>img {
-    margin: 2rem 0;
-}
-
-.secondSection>img {
-    margin: 2rem 0;
-}
 
 .fourthSection {
     min-height: 100vh;
@@ -319,6 +318,13 @@ footer>div {
 
 
 
+
+
+
+
+
+
+
 @media screen and (min-width:850px) {
     .hamburger {
         display: none;
@@ -326,6 +332,7 @@ footer>div {
 
     .nav-bar {
         position: relative;
+        /* box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); */
     }
 
     /* Afficher menu  */
@@ -351,9 +358,7 @@ footer>div {
         color: var(--secondary-color);
     }
 
-    .nav-item>a>i {
-        font-size: ;
-    }
+
 
     header>img {
         width: 15%;
@@ -364,110 +369,116 @@ footer>div {
        https://meyerweb.com/eric/thoughts/2018/06/28/what-is-the-css-ch-unit/ */
 
 
-    /*bandeau texte défilant */
-    .boxDefilement {
-        overflow: hidden;
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        gap: 0.5rem;
-        align-items: center;
-        width: 100%;
-        height: var(--heightWelcome);
-        background-color: var(--tertiary-color);
-    }
-
-    .boxDefilement>div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5rem;
-        animation: Scroll 8s infinite linear;
-
-    }
-
-    @keyframes Scroll {
-        0% {
-            transform: translateX(0);
-        }
-
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-
-    .circleDefilement {
-        height: 10px;
-        width: 10px;
-        background-color: var(--secondary-color);
-        border-radius: 5px;
-    }
-
-    .textDefile {
-        font-size: 1.8rem;
-        font-weight: 800;
-        color: var(--main-color);
-    }
-
-    /* FIN bandeau texte défilant */
-
-
-
-
-
-
-    p {
-        width: 60ch;
-    }
-
     .firstSection,
     .secondSection,
     .thirdSection,
     .fourthSection {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-        /* padding: 3rem 20rem; */
+        padding: 4rem 8rem;
         scroll-margin-top: 0;
+    }
+
+    .firstSection {
+        /* display: flex;
+        flex-direction: column; */
+        /* height: 100vh; */
+        /* display: flex; */
+        /* flex-flow: row wrap; */
+    }
+
+    .firstSection>section {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+    }
+
+
+    .firstSection>section>p {
+        flex: 1;
+        font-size: 2rem;
+    }
+
+    .firstSection>section>img {
+        flex: 1;
+    }
+
+    .secondSection>section {
+        display: flex;
+        align-items: flex-start;
+
+    }
+
+    #sliderA,
+    #sliderB {
+        flex: 1.5;
+    }
+
+    .secondSection>section>section {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 2rem 0 0 2rem;
+        flex: 1;
+    }
+
+    #secondSlider>section {
+        flex-direction: row-reverse;
+
+    }
+
+    #secondSlider>section>section {
+        margin: 2rem 2rem 0 0;
+    }
+
+    .thirdSection>img {
+        width: 100vh;
+        /* margin: 0; */
+    }
+
+    .button {
+        width: 20ch;
+        margin: 0.5rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        align-items: center;
+        min-height: initial;
+        padding: 1rem 8rem;
+
     }
 
 
 
-}
+    footer>div {
 
-.firstSection>img {
-    width: 100vh;
-}
+        margin: 0 auto;
+        flex: 1;
+    }
 
-.secondSection>img {
-    width: 100vh;
-}
+    footer>div>img {
+        width: 50%;
+    }
 
-.thirdSection>img {
-    width: 100vh;
-    /* margin: 0; */
-}
+    footer>section>p {
+        font-size: 1rem;
+    }
 
-.button {
-    width: 20ch;
-    margin: 0.5rem;
-}
+    footer>section:nth-of-type(2) {
+        margin: 0 auto;
+        flex: 3;
+    }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    .footerSectionBTN {
+        order: 1;
+        flex: 1;
+        margin: 0;
+    }
 
-}
-
-footer>div {
-    width: 15%;
-    margin: 3rem auto;
-}
-
-
+    .footerSectionBTN>a {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
 }
