@@ -23,10 +23,11 @@ nav {
 nav>a {
     font-size: 2rem;
     color: var(--tertiary-color);
+
 }
 
 nav>a>img {
-    width: 40%;
+    width: 2em;
 }
 
 
@@ -47,7 +48,6 @@ nav>a>img {
     z-index: 2000;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     text-align: center;
     gap: 5px;
     width: 100%;
@@ -100,12 +100,8 @@ nav>a {
 }
 
 
-
-
-
 header>img {
     width: 50%;
-    /* height: 50%; */
 }
 
 /*div qui contient l'image centrale de l'accueil*/
@@ -208,10 +204,10 @@ h1 {
 .secondSection,
 .thirdSection {
     min-height: 100vh;
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start; */
     padding: 2rem;
+    /* définit la marge du scroll */
+    scroll-margin-top: var(--heightNav);
+
 }
 
 .firstSection>img {
@@ -302,8 +298,7 @@ h1 {
 }
 
 footer {
-    /* display: flex;
-    flex-direction: column; */
+
     min-height: 100vh;
     padding: 2rem;
 
@@ -328,4 +323,151 @@ footer>div {
     .hamburger {
         display: none;
     }
+
+    .nav-bar {
+        position: relative;
+    }
+
+    /* Afficher menu  */
+    .nav-menu {
+        display: flex;
+        position: relative;
+        z-index: 2000;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-color: transparent;
+        left: 0%;
+        padding: 0;
+        font-weight: 300;
+    }
+
+    .nav-item {
+        list-style: initial;
+        color: var(--secondary-color);
+    }
+
+    .nav-item>a>i {
+        font-size: ;
+    }
+
+    header>img {
+        width: 15%;
+    }
+
+    /* unité ch = ch est basé sur la largeur du caractère 0
+       Bonne pratique : il est conseillé
+       https://meyerweb.com/eric/thoughts/2018/06/28/what-is-the-css-ch-unit/ */
+
+
+    /*bandeau texte défilant */
+    .boxDefilement {
+        overflow: hidden;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 0.5rem;
+        align-items: center;
+        width: 100%;
+        height: var(--heightWelcome);
+        background-color: var(--tertiary-color);
+    }
+
+    .boxDefilement>div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        animation: Scroll 8s infinite linear;
+
+    }
+
+    @keyframes Scroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .circleDefilement {
+        height: 10px;
+        width: 10px;
+        background-color: var(--secondary-color);
+        border-radius: 5px;
+    }
+
+    .textDefile {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--main-color);
+    }
+
+    /* FIN bandeau texte défilant */
+
+
+
+
+
+
+    p {
+        width: 60ch;
+    }
+
+    .firstSection,
+    .secondSection,
+    .thirdSection,
+    .fourthSection {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        /* padding: 3rem 20rem; */
+        scroll-margin-top: 0;
+    }
+
+
+
+}
+
+.firstSection>img {
+    width: 100vh;
+}
+
+.secondSection>img {
+    width: 100vh;
+}
+
+.thirdSection>img {
+    width: 100vh;
+    /* margin: 0; */
+}
+
+.button {
+    width: 20ch;
+    margin: 0.5rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer>div {
+    width: 15%;
+    margin: 3rem auto;
+}
+
+
 }
