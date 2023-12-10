@@ -1,29 +1,27 @@
 # projet01_cafeHikari
-Projet Wild Code School n°1 : Café Hikari
 
-mercredi 15/11
+# Wild Code School - projet n°1
+Ce projet s'inscrit dans le bootcamp Développement Web que nous suivons à la Wild Code School en remote.
+Il s'agit du premier projet que nous avons réalisé en binôme.
+Les critères : réaliser un site web statique en HTML/CSS avec une touche de Javascript natif.
+Ce premier projet consistait avant tout à expérimenter le codage et la création d'un site web en équipe.
 
-#Accueil
-On veut :
-- le logo centré sur la page
-- un menu burger "fixed" pour la navigation qui s'ouvre/se ferme + logo version titre
-  Quand on clique sur l'icon burger, le menu se déroule et prend toute la page, il est centré.
+# Café Hikari 
+Café Hikari est un projet créé par l'illustratrice Lu On Mars et le photographe Arthur Silvestrini.
+Il s'agit d'un lieu fictif dédié à leur travail respectif en illustration et en photographie.
+Il a pour but la découverte du Japon dans un cadre accueillant façon "café".
 
-  // définir une hauteur à l'élément nav
-  
-  // ajouter une hauteur minimum au header pour permettre d'avoir un calcul responsive de la hauteur du block de manière à ce que la nav + le header = taille de la hauteur de l'écran
+# Le site
+Ce projet web reprend la charte graphique créée par leurs soins, ainsi que certaines de leurs illustrations et photos.
+Il s'agit de la version V1 (versions ultérieures prévues).
 
-  // cacher la croix et les liens (tant que le menu burger n'est pas ouvert et qu ela taille d'écran n'est pas supérieur à 768px)
-  // quand le menu est ouvert, les liens de navigation apparaissent centrés, apparaît la croix
+Il s'agit de :
+- présenter l'univers Café Hikari
+- exposer des séries photos/illustrations sur des lieux / événements japonais et des explications
+- présenter qui sont Lu On Mars et Arthur Silvestrini
 
-//rajouter une classe hidden aux éléments html à cacher
-// on ajoutera donc la classe hidden à nav>ul et à la 
-//croix 
-
-// 
-
-- un bandeau "Bienvenue" en pied de page (le rendre dynamique en JS)
+Actuellement, il s'agit de texte Lorem ipsum.
 
 
-
-# cafeHikari
+# Attention : privilégier Mozilla Firefox pour ouvrir le projet.
+Problème d'affichage sous Google Chrome à résoudre.
