@@ -25,3 +25,8 @@ Actuellement, il s'agit de texte Lorem ipsum.
 
 # Attention : privilégier Mozilla Firefox pour ouvrir le projet.
 Problème d'affichage sous Google Chrome à résoudre.
+
+
+En savoir plus sur Café Hikari : https://www.instagram.com/cafehikari_/
+
+Identité graphique, illustrations, photos, tous droits réservés : Café Hikari (2023)
