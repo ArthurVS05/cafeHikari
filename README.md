@@ -13,7 +13,7 @@ Il a pour but la découverte du Japon dans un cadre accueillant façon "café".
 
 # Le site
 Ce projet web reprend la charte graphique créée par leurs soins, ainsi que certaines de leurs illustrations et photos.
-Il s'agit de la version V1 (versions ultérieures prévues).
+Il s'agit de la version V1.
 
 Il s'agit de :
 - présenter l'univers Café Hikari

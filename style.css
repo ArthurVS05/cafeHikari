@@ -70,7 +70,6 @@ nav>a>img {
 
 .hamburger {
     z-index: 2000;
-    /* cursor: pointer; */
 }
 
 .bar-burger {
@@ -99,12 +98,10 @@ nav>a {
     text-decoration: none;
 }
 
-
 header>img {
     width: 50%;
 }
 
-/*div qui contient l'image centrale de l'accueil*/
 header {
     display: flex;
     justify-content: center;
@@ -199,7 +196,6 @@ h1 {
     background: var(--light);
 }
 
-/* hauteur des sections*/
 
 .firstSection,
 .secondSection,
@@ -222,7 +218,7 @@ h1 {
 
 #sliderA,
 #sliderB {
-    width: 100%;
+    max-width: 100%;
     margin: 2rem 0;
 }
 
@@ -235,12 +231,6 @@ h1 {
     flex-direction: column;
     gap: 1rem;
     padding: 1.5rem;
-}
-
-.photoDuo>section>img {
-    /* height: 40vh;
-    object-fit: cover; */
-    padding-bottom: ;
 }
 
 .photoDuo>section>p {
@@ -262,15 +252,11 @@ h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 2rem;
-
-
 }
 
 .buttonsSlider>button {
     margin: 1rem;
 }
-
-
 
 .fourthSection {
     min-height: 100vh;
@@ -303,8 +289,6 @@ h1 {
     width: 100%;
 }
 
-
-
 .buttonContactUs {
     background-color: var(--light);
     color: var(--main-color);
@@ -315,10 +299,8 @@ h1 {
 }
 
 footer {
-
     min-height: 100vh;
     padding: 2rem;
-
 }
 
 footer>section {
@@ -342,10 +324,6 @@ footer>div>img {
 
 
 
-
-
-
-
 @media screen and (min-width: 700px) and (max-width: 850px) {
 
 
@@ -356,7 +334,6 @@ footer>div>img {
     .firstSection {
         min-height: auto;
         padding: 2rem 2rem 4rem;
-
     }
 
     .firstSection>section>img {
@@ -395,7 +372,6 @@ footer>div>img {
     footer>div>img {
         width: 25%;
         margin: 0 auto;
-
     }
 
 }
@@ -407,10 +383,8 @@ footer>div>img {
 
     .nav-bar {
         position: relative;
-        /* box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1); */
     }
 
-    /* Afficher menu  */
     .nav-menu {
         display: flex;
         position: relative;
@@ -433,18 +407,11 @@ footer>div>img {
         color: var(--secondary-color);
     }
 
-
-
     header>img {
         width: 15%;
     }
 
-    /* unité ch = ch est basé sur la largeur du caractère 0
-       Bonne pratique : il est conseillé
-       https://meyerweb.com/eric/thoughts/2018/06/28/what-is-the-css-ch-unit/ */
-
-
-    .firstSection,
+     .firstSection,
     .secondSection,
     .thirdSection,
     .fourthSection {
@@ -454,7 +421,6 @@ footer>div>img {
 
     .firstSection {
         min-height: auto;
-
     }
 
     .firstSection>section {
@@ -474,6 +440,7 @@ footer>div>img {
     }
 
     .firstSection>section>img {
+        max-width: 40%;
         flex: 1;
         padding: 0;
     }
@@ -481,12 +448,12 @@ footer>div>img {
     .secondSection>section {
         display: flex;
         align-items: flex-start;
-
     }
 
     #sliderA,
     #sliderB {
-        flex: 1.5;
+       max-width: 50%;
+       flex: 1.5;
     }
 
     .secondSection>section>section {
@@ -499,7 +466,6 @@ footer>div>img {
 
     #secondSlider>section {
         flex-direction: row-reverse;
-
     }
 
     #secondSlider>section>section {
@@ -511,13 +477,10 @@ footer>div>img {
         flex-direction: row;
         justify-content: center;
         width: 100%;
-
-
     }
 
     .photoDuo>section {
         width: 30%;
-
     }
 
     .fourthSection {
@@ -553,17 +516,14 @@ footer>div>img {
     footer {
         display: flex;
         flex-direction: row;
-        /* justify-content: space-between; */
         align-items: center;
         min-height: initial;
         padding: 1rem 8rem;
-
     }
 
 
 
     footer>div {
-
         margin: 0 auto;
         flex: 1;
     }

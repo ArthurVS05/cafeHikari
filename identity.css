@@ -5,8 +5,6 @@
     --light: #F5F2EC;
     --dark: #333333;
     --font-family: "neue-kabel";
-
-    /* Pour que le contenu central de la page d'accueil prenne la place restante*/
     --heightNav: 8vh;
     --heightWelcome: 7vh;
     --minHeightCalc: calc(100vh - var(--heightWelcome));
