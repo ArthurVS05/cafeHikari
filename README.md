@@ -30,3 +30,7 @@ Actuellement, il s'agit de texte Lorem ipsum.
 En savoir plus sur Café Hikari : https://www.instagram.com/cafehikari_/
 
 Identité graphique, illustrations, photos, tous droits réservés : Café Hikari (2023)
+
+# Aperçu du site 
+https://65b2d0a53880fd374887dfb5--cerulean-lokum-3ba4f6.netlify.app/
+
