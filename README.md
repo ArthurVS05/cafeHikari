@@ -1,5 +1,9 @@
 # projet01_cafeHikari
 
+# Auteurs
+
+Sylvain Moreau et Arthur Vincent-Silvestrini
+
 # Wild Code School - projet n°1
 Ce projet s'inscrit dans le bootcamp Développement Web que nous suivons à la Wild Code School en remote.
 Il s'agit du premier projet que nous avons réalisé en binôme.
@@ -21,10 +25,6 @@ Il s'agit de :
 - présenter qui sont Lu On Mars et Arthur Silvestrini
 
 Actuellement, il s'agit de texte Lorem ipsum.
-
-
-# Attention : privilégier Mozilla Firefox pour ouvrir le projet.
-Problème d'affichage sous Google Chrome à résoudre.
 
 
 En savoir plus sur Café Hikari : https://www.instagram.com/cafehikari_/
