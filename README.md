@@ -26,6 +26,8 @@ Il s'agit de :
 
 Actuellement, il s'agit de texte Lorem ipsum.
 
+# Maquette Figma : https://www.figma.com/file/4YbDzPdWqP8LCXxkHa4lcE/Untitled?type=design&node-id=0%3A1&mode=design&t=zZh7piKiIF2xyOIF-1
+
 
 En savoir plus sur Café Hikari : https://www.instagram.com/cafehikari_/
 
